@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .general {
+            text-align: center;
+            background: rgb(192, 192, 192);
+        }
+        .main {
+            display: flex;
+            float: left;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            border: 1px solid blue;
+            height: 50vh;
+            background: rgb(249, 247, 81);
+        }     
+        .section-general {
+            text-align: center;
+            background: rgb(249, 247, 81);
+        }
+        .supplemental {
+            display: flex;
+            text-align: center;
+            width: 1020px;
+            background: rgb(249, 247, 81);
+        }
+        .supplemental-p1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            border: 1px solid red;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+            text-align: center;
+            margin-left: 30px;
+            line-height: 100px;
+            width: 300px;
+            align-self: flex-start;
+            order: 1;
+            background: rgba(255, 204, 101, 0.989);
+        }
+        .supplemental-p2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            border: 1px solid red;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+            text-align: center;
+            margin-left: 30px;
+            line-height: 100px;
+            width: 300px;
+            align-self: flex-start;
+            order: 3;
+            background: rgba(255, 204, 101, 0.989);
+        }
+        .supplemental-p3 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-self: flex-end;
+            order: 2;
+            flex-grow: 1;
+            border: 1px solid red;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+            text-align: center;
+            margin-left: 30px;
+            line-height: 100px;
+            width: 300px;
+            background: rgba(255, 204, 101, 0.989);
+        }
+        .aside {
+            float: right;
+            text-align: center;
+            justify-content:end;
+            border: 1px solid blue;
+            height: 50vh;
+            width: 400px;
+            background: #7abf0b;
+        }
+        .footer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid blue;
+            height: 30vh;
+            background: rgb(192, 192, 192);
+        }
+        .footer-f1 {
+            align-self: center;
+            flex-grow: 1;
+            border: 1px solid red;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            margin-left: 30px;
+            align-items: center;
+            align-self: center;
+            align-content: space-around;
+            text-align: center;
+            line-height: 100px;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="general">
+    <h1>Шапка страницы</h1>
+    </div>
+    <main class="main">
+        <section class="section">
+    <div class="section-general">
+        <h2>Основная часть</h2></div>
+    <div class="supplemental">
+        <p class="supplemental-p1">Ещё 1</p>
+        <p class="supplemental-p2">Ещё 2</p>
+        <p class="supplemental-p3">Ещё 3</p>
+    </div>
+    </section>
+    <aside class="aside">
+        <h2>Боковая область</h2>
+    </aside>
+    </main>
+    <div class="footer">
+        <p class="footer-f1">Секция футера 1</p>
+        <p class="footer-f1">Секция футера 2</p>
+        <p class="footer-f1">Секция футера 3</p>
+        <p class="footer-f1">Секция футера 4</p>
+    </div>
+</body>
+</html>
